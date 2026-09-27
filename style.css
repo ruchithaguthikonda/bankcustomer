@@ -1,0 +1,541 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+
+/* ================= LOGIN PAGE ================= */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0b3d91, #1976d2);
+}
+
+.login-box {
+    width: 380px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bank-logo {
+    font-size: 50px;
+}
+
+.login-box h1 {
+    color: #0b3d91;
+    margin-top: 10px;
+}
+
+.login-box p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.login-box form {
+    text-align: left;
+}
+
+.login-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #1976d2;
+}
+
+.login-box button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #0b3d91;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #1976d2;
+}
+
+
+/* ================= PORTAL ================= */
+
+.portal {
+    display: flex;
+}
+
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background: #0b3d91;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar nav {
+    padding-top: 20px;
+}
+
+.sidebar nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px;
+    transition: 0.3s;
+}
+
+.sidebar nav a:hover {
+    background: #1976d2;
+    padding-left: 28px;
+}
+
+
+/* ================= MAIN CONTENT ================= */
+
+.main-content {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    padding: 25px;
+}
+
+
+/* ================= HEADER ================= */
+
+.top-header {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.top-header h2 {
+    color: #0b3d91;
+}
+
+.top-header p {
+    color: #777;
+    margin-top: 5px;
+}
+
+.profile {
+    background: #eaf2ff;
+    color: #0b3d91;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+
+/* ================= SECTIONS ================= */
+
+section {
+    margin-bottom: 35px;
+}
+
+.section-title {
+    color: #0b3d91;
+    margin-bottom: 18px;
+}
+
+.sub-title {
+    margin: 30px 0 15px;
+    color: #333;
+}
+
+
+/* ================= DASHBOARD CARDS ================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #666;
+    font-size: 15px;
+}
+
+.card p {
+    font-size: 26px;
+    font-weight: bold;
+    color: #0b3d91;
+    margin: 8px 0;
+}
+
+.positive {
+    color: #159447;
+    font-size: 13px;
+}
+
+.negative {
+    color: #d9534f;
+    font-size: 13px;
+}
+
+
+/* ================= TABLE ================= */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+th {
+    background: #0b3d91;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f5f9ff;
+}
+
+.active,
+.success {
+    background: #dff6e7;
+    color: #16833c;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.inactive {
+    background: #fde4e4;
+    color: #c0392b;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.pending {
+    background: #fff3cd;
+    color: #856404;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+
+/* ================= ANALYTICS ================= */
+
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.analytics-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.analytics-card h3 {
+    font-size: 15px;
+    color: #555;
+}
+
+.big-number {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1976d2;
+    margin: 15px 0 5px;
+}
+
+.analytics-card p {
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* ================= SEGMENTS ================= */
+
+.segments {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.segment {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.segment:hover {
+    transform: translateY(-5px);
+}
+
+.segment span {
+    font-size: 35px;
+}
+
+.segment h3 {
+    margin: 10px 0;
+    color: #0b3d91;
+}
+
+.segment p {
+    color: #777;
+}
+
+
+/* ================= REPORTS ================= */
+
+.reports {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.report-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.report-card span {
+    font-size: 35px;
+}
+
+.report-card h3 {
+    color: #0b3d91;
+    margin: 10px 0;
+}
+
+.report-card p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.report-card button,
+.settings-box button {
+    border: none;
+    background: #0b3d91;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.report-card button:hover,
+.settings-box button:hover {
+    background: #1976d2;
+}
+
+
+/* ================= SETTINGS ================= */
+
+.settings-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.settings-box h3 {
+    color: #0b3d91;
+    margin-bottom: 10px;
+}
+
+.settings-box p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.settings-box button {
+    margin-right: 10px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 1000px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .analytics-grid,
+    .segments,
+    .reports {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .sidebar nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sidebar nav a {
+        padding: 10px 15px;
+    }
+
+    .portal {
+        display: block;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .cards,
+    .analytics-grid,
+    .segments,
+    .reports {
+        grid-template-columns: 1fr;
+    }
+
+    .login-box {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .brand {
+        text-align: center;
+    }
+
+    .sidebar nav {
+        justify-content: center;
+    }
+
+    .top-header {
+        padding: 15px;
+    }
+
+    .card,
+    .analytics-card,
+    .segment,
+    .report-card {
+        padding: 18px;
+    }
+}
